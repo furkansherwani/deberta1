@@ -10,7 +10,8 @@
 """DeBERTa finetuning runner."""
 
 import os
-from collections import OrderedDict, Mapping, Sequence
+from collections import OrderedDict
+from collections.abc import Mapping, Sequence
 import argparse
 import random
 import time
