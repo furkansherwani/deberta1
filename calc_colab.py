@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 
 experiment = "all_b64"
-file_name = f"results/test_logits_test_deberta_Base.txt"
-test_data = "results/test.tsv"
+file_name = f"/tmp/ttonly/Base/QQP/test_logits_test_deberta_Base.txt"
+test_data = "/tmp/DeBERTa/glue_tasks/QQP/test.tsv"
 
 df = pd.read_csv(test_data, sep="\t")
 #print(df.head())
@@ -29,7 +29,7 @@ with open(file_name, "r") as f_:
     data = f_.read()
     print("Total samples: ", len(data.split('\n')) - 1)
     print(df.shape)
-    for i, line in enumerate(data.split("\n")): 
+    for i, line in enumerate(data.split("\n")):
         if len(line) < 1:
             continue
 
