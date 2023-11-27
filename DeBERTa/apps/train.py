@@ -211,7 +211,7 @@ def run_predict(args, model, device, eval_data, prefix=None):
     predicts = predicts[:len(eval_item.data)]
     if args.rank<=0:
       output_test_file = os.path.join(args.output_dir, "test_logits_{}_{}.txt".format(name, prefix))
-      print('Final Test Starts Here:')
+      print('Final Model Test Starts Here:')
       logger.info("***** Dump prediction results-{}-{} *****".format(name, prefix))
       logger.info("Location: {}".format(output_test_file))
       np.savetxt(output_test_file, predicts, delimiter='\t')
