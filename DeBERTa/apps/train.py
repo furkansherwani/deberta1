@@ -379,7 +379,6 @@ def build_argument_parser():
 
   parser.add_argument('--init_model',
             type=str,
-            default='base_mnli',
             help="The model state file used to initialize the model weights.")
 
   parser.add_argument('--model_config',
