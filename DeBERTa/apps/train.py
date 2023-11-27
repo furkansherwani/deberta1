@@ -182,6 +182,7 @@ def run_eval(args, model, device, eval_data, prefix=None, tag=None, steps=None):
   return eval_results
 
 def run_predict(args, model, device, eval_data, prefix=None):
+  print(model)
   # Run prediction for full data
   eval_results=OrderedDict()
   eval_metric=0
