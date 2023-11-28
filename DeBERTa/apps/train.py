@@ -436,7 +436,7 @@ def build_argument_parser():
             help="Whether to cache cooked binary features")
 
   parser.add_argument('--pre_trained',
-            default='pytorch.model-000423.bin',
+            default='base_mnli',
             type=str,
             help="The path of pre-trained RoBERTa model")
   return parser
