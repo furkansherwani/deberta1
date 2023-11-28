@@ -220,8 +220,6 @@ def run_predict(args, model, device, eval_data, prefix=None):
         predict_fn(predicts, args.output_dir, name, prefix)
 
 def main(args):
-  print(args)
-  print("...@@@@@@@...@.@@@@@@.")
   if not args.do_train and not args.do_eval and not args.do_predict:
     raise ValueError("At least one of `do_train` or `do_eval` or `do_predict` must be True.")
   os.makedirs(args.output_dir, exist_ok=True)
